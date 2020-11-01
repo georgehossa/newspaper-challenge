@@ -1,7 +1,12 @@
+@import './scss/base';
 body {
-  background-color: beige;
+  background-color: $color-background;
+  color: $color-primary;
 }
 
 h1 {
-  font-family: sans-serif;
+  font-family: $font-titles;
+  span {
+    color: $color-secondary;
+  }
 }
