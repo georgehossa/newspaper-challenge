@@ -1,0 +1,18 @@
+{
+  "name": "newspaper-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./src/index.pug",
+    "build": "parcel build ./src/index.pug"
+  },
+  "keywords": [],
+  "author": "Jorge Ossa <jorgehossa@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "pug": "^3.0.0",
+    "sass": "^1.28.0"
+  }
+}
