@@ -1,0 +1,9 @@
+.header {
+  grid-column: 1 / -1;
+  &__intro {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    justify-content: space-around;
+  }
+}

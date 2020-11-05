@@ -7,3 +7,9 @@ $color-primary: #222;
 $color-secondary: #db4d0f;
 $color-background: #f7f5e0;
 $color-sectionBg: #ebd1c0;
+
+body {
+  background-color: $color-background;
+  color: $color-primary;
+  padding: 2rem;
+}

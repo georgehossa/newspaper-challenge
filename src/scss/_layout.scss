@@ -1,0 +1,4 @@
+.layout {
+  display: grid;
+  grid-template: repeat(9, auto) / repeat(5, 1fr);
+}
