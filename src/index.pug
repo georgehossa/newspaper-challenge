@@ -1,9 +1,21 @@
-html(lang="en")
+mixin introArticle(section, title, lead, index)
+  .article--intro
+    h2.article__section= section
+    h3.article__title= title
+    p.article__lead= lead
+    span.article__index= index
+
+html(lang="es")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Newspaper Challenge
     link(rel="stylesheet", href="index.scss")
   body
-    section
-      h1 Hello World
+    main.layout
+      header.header
+        .header__intro
+          +introArticle('Cultura', 'Festival de Cannes 2015', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, fugiat porro ratione nulla repellendus dolorum necessitatibus tempore. Sit dignissimos debitis maxime nemo perferendis odio maiores, molestias quos. Sapiente, delectus eius.', 'Pag. 4')
+          +introArticle('Biografias', 'Gabriel Garcia Marquez', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, fugiat porro ratione nulla repellendus dolorum necessitatibus tempore. Sit dignissimos debitis maxime nemo perferendis odio maiores, molestias quos. Sapiente, delectus eius.', 'Pag. 20')
+          +introArticle('Actualidad', 'Festival de Cannes 2015', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, fugiat porro ratione nulla repellendus dolorum necessitatibus tempore. Sit dignissimos debitis maxime nemo perferendis odio maiores, molestias quos. Sapiente, delectus eius.', 'Pag. 41')
+        h1.header__title Quimera
