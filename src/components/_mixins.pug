@@ -1,0 +1,19 @@
+//- Intro Articles
+mixin introArticle(section, title, lead, index)
+  .article--intro
+    h2.article__section= section
+    h3.article__title= title
+    p.article__lead= lead
+    span.article__index= index
+
+//- Section Title
+mixin sectionTitle(sectionName, page, color)
+  -var color = color
+  if color
+    .section.section--color
+      .section__name= sectionName
+      .section__page= page
+  else
+    .section
+      .section__name= sectionName
+      .section__page= page
