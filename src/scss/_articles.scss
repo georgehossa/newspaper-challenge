@@ -1,0 +1,16 @@
+.feature-article {
+  grid-column: 1 / span 4;
+  &__title {
+    margin: 0.5rem 0;
+    font-size: 4rem;
+  }
+  &__content {
+    columns: 4;
+    &::first-letter{
+      font-size: 3rem;
+      float: left;
+      margin: -3px 2px;
+      line-height: 3.5rem
+    }
+  }
+}

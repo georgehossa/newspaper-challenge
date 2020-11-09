@@ -1,0 +1,32 @@
+.section {
+  display: flex;
+  justify-content: space-between;
+  &__name {
+    text-transform: uppercase ;
+    font-weight: bold;
+  }
+
+  &__page {
+    text-transform: capitalize;
+    font-variant-caps: small-caps;
+  }
+
+  &--color {
+    background-color: $color-sectionBg;
+    padding: .1rem .2rem;
+  }
+}
+
+.figure {
+  margin: 0;
+  &__image {
+    display: block;
+    width: 100%;
+  }
+  &__caption {
+    padding: .2rem 0;
+    font-size: .8rem;
+    font-style: italic;
+    border-bottom: 1px solid $color-primary;
+  }
+}
