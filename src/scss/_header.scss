@@ -6,4 +6,8 @@
     column-gap: 2rem;
     justify-content: space-around;
   }
+  &__title{
+    display: grid;
+    grid-template-columns: .3fr 1fr .3fr;
+  }
 }
