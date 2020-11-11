@@ -1,3 +1,4 @@
+include components/_info
 include components/_articles
 include components/_mixins
 
@@ -9,5 +10,7 @@ html(lang="es")
     link(rel="stylesheet" href="index.scss")
   body
     main.layout
-      include components/header
-      include components/main-section
+      include components/_header
+      include components/_articles-top
+      include components/_articles-right
+      include components/_articles-bottom
