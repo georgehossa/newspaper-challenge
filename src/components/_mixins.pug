@@ -1,10 +1,13 @@
 //- Intro Articles
-mixin introArticle(section, title, lead, index)
+mixin introArticle(article, lead)
   .article--intro
-    h2.article__section= section
-    h3.article__title= title
+    h2.article__section= article.section
+    h3.article__title= article.title
     p.article__lead= lead
-    span.article__index= index
+    if article.section == 'Suplemento'
+      span.article__index Suplemento Especial
+    else
+      span.article__index= 'Pag.'+article.page
 
 //- Section Title
 mixin sectionTitle(sectionName, page, color)
@@ -12,8 +15,25 @@ mixin sectionTitle(sectionName, page, color)
   if color
     .section.section--color
       .section__name= sectionName
-      .section__page= page
+      if page
+        .section__page= page
   else
     .section
       .section__name= sectionName
-      .section__page= page
+      if page
+        .section__page= page
+
+//- Article
+mixin article(article, content, lead, highlight, position)
+  -var path = 'assets/'
+  section(class=position)
+    +sectionTitle(article.section, 'Pág.'+article.page, highlight)
+    h2(class=position+'__title')= article.title
+    if lead
+      p(class=position+'__lead')= lead
+    if article.image
+      figure.figure(class=position+'--figure')
+        img.figure__image(src=path+article.image)
+        figcaption.figure__caption= article.caption
+    if content
+      p(class=position+'__content')= content
