@@ -13,3 +13,13 @@ body {
   color: $color-primary;
   padding: 2rem;
 }
+
+img {
+  filter: grayscale(100%);
+  mix-blend-mode: multiply;
+  transition: .3s;
+  &:hover{
+    mix-blend-mode: normal;
+    filter: grayscale(0%);
+  }
+}
