@@ -1,4 +1,23 @@
 .layout {
   display: grid;
-  grid-template: repeat(9, auto) / repeat(5, 1fr);
+  grid-template: repeat(3, auto) / 4fr 1fr;
+  grid-template-areas:  "header header"
+                        "top right"
+                        "bottom right";
+  column-gap: 1.5rem;
+}
+
+.articles {
+  &--top {
+    grid-area: top;
+  }
+
+  &--right {
+    grid-area: right;
+  }
+
+  &--bottom {
+    grid-area: bottom;
+  }
+
 }
