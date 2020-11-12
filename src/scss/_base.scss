@@ -1,14 +1,18 @@
 // FONTS
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans&display=swap');
 // VARIABLES
-$font-titles: 'DM Serif Display', serif;
+$font-titles: 'Playfair Display', serif;
 $font-default: 'Open Sans', sans-serif;
 $color-primary: #222;
 $color-secondary: #db4d0f;
 $color-background: #f7f5e0;
 $color-sectionBg: #ebd1c0;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
+  font-family: $font-default;
   background-color: $color-background;
   color: $color-primary;
   padding: 2rem;
