@@ -1,6 +1,8 @@
 .section {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
   margin-bottom: 2rem;
   font-family: $font-titles;
 
@@ -15,8 +17,9 @@
   }
 
   &--color {
-    background-color: $color-sectionBg;
+    max-height: 25px;
     padding: .1rem .2rem;
+    background-color: $color-sectionBg;
   }
 }
 
