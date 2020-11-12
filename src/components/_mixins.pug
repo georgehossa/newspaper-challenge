@@ -1,13 +1,16 @@
 //- Intro Articles
 mixin introArticle(article, lead)
-  .article--intro
-    h2.article__section= article.section
-    h3.article__title= article.title
-    p.article__lead= lead
+  article.intro-article
+    h2.intro-article__section= article.section
+    h3.intro-article__title= article.title
     if article.section == 'Suplemento'
-      span.article__index Suplemento Especial
+      p.intro-article__lead
+        | #{lead}
+        span.intro-article__index Suplemento Especial
     else
-      span.article__index= 'Pag.'+article.page
+      p.intro-article__lead
+        | #{lead}
+        span.intro-article__index= 'Pag.'+article.page
 
 //- Section Title
 mixin sectionTitle(sectionName, page, color)

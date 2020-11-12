@@ -1,3 +1,38 @@
+.intro-article {
+  text-align: center;
+  padding: .2rem 1rem;
+  &__section, &__title {
+    font-family: $font-titles;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  &__section {
+    font-size: .8rem;
+  }
+  &__title {
+    margin-bottom: 1rem;
+    &::before, &::after {
+      content: '·';
+    }
+  }
+  &__lead {
+    font-size: .875rem;
+    font-style: italic;
+    margin: 0;
+  }
+  &__index {
+    display: inline-block;
+    margin: 0 0 0 .2rem;
+    font-family: $font-titles;
+    font-style: italic;
+    color: $color-secondary;
+  }
+
+  &:not(:first-child) {
+    border-left: 1px solid lighten($color-primary,50%);
+  }
+}
+
 .feature-article {
   grid-column: 1 / span 4;
 

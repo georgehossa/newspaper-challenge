@@ -3,8 +3,10 @@
   &__intro {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
     justify-content: space-around;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1.5px solid $color-primary;
   }
   &__title{
     display: grid;
