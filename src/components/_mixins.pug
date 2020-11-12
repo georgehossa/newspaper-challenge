@@ -26,7 +26,7 @@ mixin sectionTitle(sectionName, page, color)
 //- Article
 mixin article(article, content, lead, highlight, position)
   -var path = 'assets/'
-  section(class=position)
+  article(class=position)
     +sectionTitle(article.section, 'Pág.'+article.page, highlight)
     h2(class=position+'__title')= article.title
     if lead
