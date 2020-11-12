@@ -1,0 +1,39 @@
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  font-family: $font-titles;
+
+  &__name {
+    text-transform: uppercase ;
+    font-weight: bold;
+  }
+
+  &__page {
+    text-transform: capitalize;
+    font-variant-caps: small-caps;
+  }
+
+  &--color {
+    max-height: 25px;
+    padding: .1rem .2rem;
+    background-color: $color-sectionBg;
+  }
+}
+
+.figure {
+  margin: 0;
+  &__image {
+    display: block;
+    width: 100%;
+  }
+  &__caption {
+    padding: .2rem 0;
+    font-family: $font-titles;
+    font-size: .8rem;
+    font-style: italic;
+    border-bottom: 1px solid $color-primary;
+  }
+}

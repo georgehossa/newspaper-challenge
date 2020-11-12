@@ -1,9 +1,18 @@
-html(lang="en")
+include components/_info
+include components/_articles
+include components/_mixins
+
+html(lang="es")
   head
     meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title Newspaper Challenge
-    link(rel="stylesheet", href="index.scss")
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet")
+    link(rel="stylesheet" href="index.scss")
   body
-    section
-      h1 Hello World
+    main.layout
+      include components/_header
+      include components/_articles-top
+      include components/_articles-right
+      include components/_articles-bottom

@@ -1,7 +1,5 @@
-body {
-  background-color: beige;
-}
-
-h1 {
-  font-family: sans-serif;
-}
+@import './scss/base';
+@import './scss/layout';
+@import './scss/header';
+@import './scss/articles';
+@import './scss/utilities';

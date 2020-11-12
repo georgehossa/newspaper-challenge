@@ -1,0 +1,29 @@
+// FONTS
+// VARIABLES
+$font-titles: 'Playfair Display', serif;
+$font-default: 'Open Sans', sans-serif;
+$color-primary: #222;
+$color-secondary: #db4d0f;
+$color-background: #f7f5e0;
+$color-sectionBg: #ebd1c0;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-default;
+  background-color: $color-background;
+  color: $color-primary;
+  padding: 2rem;
+}
+
+img {
+  filter: grayscale(100%);
+  mix-blend-mode: multiply;
+  transition: .3s;
+  &:hover{
+    mix-blend-mode: normal;
+    filter: grayscale(0%);
+  }
+}
